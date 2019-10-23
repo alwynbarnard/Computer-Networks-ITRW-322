@@ -1,0 +1,58 @@
+﻿<Page x:Class="Desktop.NotificationsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Desktop"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="NotificationsPage">
+
+    <Page.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontSize" Value="25"></Setter>
+            <Setter Property="FontWeight" Value="Bold"></Setter>
+            <Setter Property="TextAlignment" Value="Center"></Setter>
+
+        </Style>
+    </Page.Resources>
+    <Grid Background="#FFE5E5E5">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="250"></ColumnDefinition >
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="txbNotifications" Text="NOTIFICATIONS" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+        <Label x:Name="lblConversationTones" FontSize="15" Content="Conversation Tones" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center"></Label>
+        <Label x:Name="lblMessages" FontSize="18" Content="Messages" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontStyle="Italic" FontWeight="Bold"></Label>
+        <Label x:Name="lblMessageNotificationTone" FontSize="15" Content="Notification Tones" Grid.Row="3" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center"></Label>
+        <Label x:Name="lblMessageVibrate" FontSize="15" Content="Vibrate" Grid.Row="4" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center"></Label>
+        <Label x:Name="lblGroups" FontSize="18" Content="Groups" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontStyle="Italic" FontWeight="Bold"></Label>
+        <Label x:Name="lblGroupNotificationTone" FontSize="15" Content="Notification Tones" Grid.Row="6" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center"></Label>
+        <Label x:Name="lblGroupVibrate" FontSize="15" Content="Vibrate" Grid.Row="7" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center"></Label>
+        <Label x:Name="lblCalls" FontSize="18" Content="Calls" Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontStyle="Italic" FontWeight="Bold"></Label>
+        <Label x:Name="lblRingtone" FontSize="15" Content="Notification Tones" Grid.Row="9" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center"></Label>
+        <Label x:Name="lblCallVibrate" FontSize="15" Content="Vibrate" Grid.Row="10" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center"></Label>
+        <CheckBox x:Name="cbxConversationTones" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="2" Grid.Row="1" FontSize="20"></CheckBox>
+        <CheckBox x:Name="cbxMessageVibrate" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="2" Grid.Row="4" FontSize="20"></CheckBox>
+        <CheckBox x:Name="cbxGroupVibrate" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="2" Grid.Row="7" FontSize="20"></CheckBox>
+        <CheckBox x:Name="cbxCallVibrate" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="2" Grid.Row="10" FontSize="20"></CheckBox>
+        <Button x:Name="btnMessageNotificationTones" Content="New Notification Tone..." HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="2" Grid.Row="3" FontSize="15"></Button>
+        <Button x:Name="btnGroupNotificationTones" Content="New Notification Tone..." HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="2" Grid.Row="6" FontSize="15"></Button>
+        <Button x:Name="btnCallNotificationTones" Content="New Notification Tone..." HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="2" Grid.Row="9" FontSize="15"></Button>
+        <Button x:Name="btnSave" Content=" √ SAVE " HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" Grid.Row="11" FontSize="20" Grid.ColumnSpan="2" FontStyle="Oblique" FontWeight="SemiBold" Click="BtnSave_Click"></Button>
+    </Grid>
+</Page>

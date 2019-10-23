@@ -1,0 +1,40 @@
+﻿<Page x:Class="Desktop.HelpPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Desktop"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="HelpPage">
+
+    <Page.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontSize" Value="25"></Setter>
+            <Setter Property="FontWeight" Value="Bold"></Setter>
+            <Setter Property="TextAlignment" Value="Center"></Setter>
+
+        </Style>
+    </Page.Resources>
+    <Grid Background="#FFE5E5E5">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" ></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition></RowDefinition>
+
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="txbHelp" Text="HELP" Grid.ColumnSpan="3" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30"></TextBlock>
+        <TextBlock x:Name="txbFAQ" Text="Frequently Asked Questions" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="12" Grid.Row="1"></TextBlock>
+        <TextBlock x:Name="txbContactUs" Text="Contact Us" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="12" Grid.Row="1" Grid.Column="1"></TextBlock>
+        <TextBlock x:Name="txbPrivacyPolicy" Text="Privacy Policy" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="12" Grid.Row="1" Grid.Column="2"></TextBlock>
+        <TextBox x:Name="txtFAQ" Grid.Row="2" Grid.Column="0" FontSize="11" FontStyle="Italic"></TextBox>
+        <TextBox x:Name="txtContactUs" Grid.Row="2" Grid.Column="1" FontSize="11" FontStyle="Italic"></TextBox>
+        <TextBox x:Name="txtPrivacyPolicy" Grid.Row="2" Grid.Column="2" FontSize="11" FontStyle="Italic"></TextBox>
+
+    </Grid>
+</Page>

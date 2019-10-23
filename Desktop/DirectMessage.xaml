@@ -1,0 +1,57 @@
+﻿<Page x:Class="Desktop.DirectMessage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Desktop"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="DirectMessage">
+
+    <Viewbox>
+        <Grid Background="White">
+            <Rectangle Fill="#FF764601" HorizontalAlignment="Right" Height="55" Stroke="Black" VerticalAlignment="Top" Width="800"/>
+            <Image x:Name="imgContact" HorizontalAlignment="Left" Height="55" VerticalAlignment="Top" Width="55" RenderTransformOrigin="-0.073,0.457"/>
+            <Rectangle Fill="#FF764601" HorizontalAlignment="Left" Height="43" Stroke="Black" VerticalAlignment="Top" Width="800" Margin="0,407,0,0"/>
+            <TextBox x:Name="txtMessage" HorizontalAlignment="Left" Height="28" Margin="10,416,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="653" KeyDown="TxtMessage_KeyDown" VerticalContentAlignment="Center" FontSize="14" Background="{DynamicResource {x:Static SystemColors.MenuBrushKey}}"/>
+            <Button x:Name="btnAttachment"  HorizontalAlignment="Left" Margin="674,416,0,0" VerticalAlignment="Top" Width="28" Height="28" RenderTransformOrigin="-0.824,0.435" Background="{DynamicResource {x:Static SystemColors.MenuBrushKey}}">
+                <StackPanel>
+                    <Image Source="Resources/PaperClip.png" Height="24" Width="24"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="btnSend" Content="Send" HorizontalAlignment="Left" Margin="744,416,0,0" VerticalAlignment="Top" Width="46" Height="27" Click="BtnSend_Click" RenderTransformOrigin="0.095,0.261" FontSize="14" Background="{DynamicResource {x:Static SystemColors.MenuBrushKey}}"/>
+            <Label x:Name="label" Content="Contact Name / Group Name" HorizontalAlignment="Left" VerticalAlignment="Top" Height="55" Width="668" VerticalContentAlignment="Center" FontFamily="Lucida Sans" FontSize="20" Foreground="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" HorizontalContentAlignment="Center" Margin="60,0,0,0"/>
+            <Button x:Name="btnVoiceNote" HorizontalAlignment="Left" Margin="705,416,0,0" VerticalAlignment="Top" Width="28" Height="28" Background="{DynamicResource {x:Static SystemColors.MenuBrushKey}}">
+                <StackPanel>
+                    <Image Source="Resources/Mic.png" Height="24" Width="26"/>
+                </StackPanel>
+            </Button>
+            <StackPanel HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100"/>
+            <StackPanel HorizontalAlignment="Left" Height="361" Margin="0,55,0,0" VerticalAlignment="Top" Width="800">
+                <StackPanel x:Name="chatbox" Height="353" Background="#FF858282" CanVerticallyScroll="True" ScrollViewer.CanContentScroll="True"/>
+            </StackPanel>
+            <Button x:Name="btnSettings" HorizontalAlignment="Left" Margin="758,10,0,0" VerticalAlignment="Top" Width="32" Height="34" Background="{DynamicResource {x:Static SystemColors.MenuBrushKey}}" Click="BtnSettings_Click" RenderTransformOrigin="0.5,0.5">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0.846"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+                <StackPanel Height="30">
+                    <Image Source="Resources/CogWheel.png" Height="31" Width="29" RenderTransformOrigin="0.5,0.5">
+                        <Image.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="-254.757"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Image.RenderTransform>
+                    </Image>
+                </StackPanel>
+            </Button>
+        </Grid>
+    </Viewbox>
+</Page>
