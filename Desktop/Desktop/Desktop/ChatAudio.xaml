@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="Desktop.ChatAudio"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Desktop"
+             mc:Ignorable="d" Height="80" Width="249">
+    <Grid Name="grid" Background="#FFE4DFDF">
+        <Label x:Name="lblDisplayName" Content="Display Name" Margin="3,-3,0,53" FontSize="14" FontWeight="Bold"/>
+        <MediaElement x:Name="mediaElement" HorizontalAlignment="Left" Height="12" Margin="139,27,0,0" VerticalAlignment="Top" Width="15" Visibility="Hidden"/>
+        <Button x:Name="btnPlayPause" Content="Play" Margin="8,30,0,28" Click="BtnPlayPause_Click" HorizontalAlignment="Left" Width="38"/>
+        <Label x:Name="lblDateTime" Content="Date Time" Margin="8,55,0,0" FontSize="10" FlowDirection="RightToLeft"/>
+        <Label x:Name="lblName" Content="/////" Margin="62,28,4,27"/>
+
+    </Grid>
+</UserControl>

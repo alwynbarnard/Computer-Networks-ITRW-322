@@ -1,0 +1,77 @@
+﻿<Page x:Class="Desktop.Login"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Desktop"
+      xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+      mc:Ignorable="d" 
+      d:DesignHeight="366" d:DesignWidth="582"
+      Title="Login">
+
+
+    <Grid >
+        <Grid.Background>
+
+            <ImageBrush ImageSource="Resources/pic3.jpg"/>
+        </Grid.Background>
+        <PasswordBox x:Name="txtPassword" Margin="217,205,193,143" Background="Black" Foreground="#FFC37C16" BorderBrush="#FF0040FF" TabIndex="1"/>
+        <Label x:Name="lblPassword" Content="Password" Margin="217,181,0,161" FontFamily="Lucida Sans" Foreground="White" HorizontalAlignment="Left" Width="65">
+            <Label.Background>
+                <SolidColorBrush Color="Black" Opacity="0.4"/>
+            </Label.Background>
+        </Label>
+        <TextBox x:Name="txtName" Margin="217,135,193,208" TextWrapping="Wrap" FontFamily="Lucida Sans" SelectionBrush="#FF008CFB" Background="Black" BorderBrush="#FF0040FF" Foreground="#FFC37C16" TabIndex="0"/>
+        <Label x:Name="lblName" Content="Email" Margin="217,111,0,231" FontFamily="Lucida Sans" Foreground="White" HorizontalAlignment="Left" Width="41">
+            <Label.Background>
+                <SolidColorBrush Color="Black" Opacity="0.4"/>
+            </Label.Background>
+        </Label>
+        <Label x:Name="lblLogin" Content="Sign in" Margin="230,57,180,260" FontFamily="Lucida Sans" FontSize="30" FontWeight="Bold" Background="{x:Null}" Foreground="White" RenderTransformOrigin="0.558,0.531"/>
+
+
+
+        <Button x:Name="btnLogin" Content="SIGN IN" Margin="214,254,196,65" FontFamily="Lucida Sans" Click="BtnLogin_Click" BorderBrush="#FF0040FF" Foreground="White" Loaded="BtnLogin_Loaded" IsDefault="True">
+
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0.8"/>
+            </Button.Background>
+        </Button>
+        <Label x:Name="lblForgot" Content="Forgot password?" Margin="240,306,230,36" FontFamily="Lucida Sans" Foreground="White" Cursor="Hand" PreviewMouseLeftButtonDown="lblForgotPassword_MouseLeftButtonDown" TabIndex="3">
+            <Label.Background>
+                <SolidColorBrush Color="Black" Opacity="0.4"/>
+            </Label.Background>
+        </Label>
+        <Button x:Name="btnSignUp" Content="Sign Up" Margin="0,10,22,317" FontFamily="Lucida Sans" Click="BtnSignUp_Click" BorderBrush="Black" Foreground="White" TextOptions.TextHintingMode="Animated" Cursor="Hand" TabIndex="4" IsCancel="True" HorizontalAlignment="Right" Width="78">
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0.4"/>
+            </Button.Background>
+            <Button.Effect>
+                <DropShadowEffect Color="#FFC8457B" ShadowDepth="10" Opacity="0.5" BlurRadius="10"/>
+            </Button.Effect>
+        </Button>
+        <Rectangle Margin="217,228,0,123" HorizontalAlignment="Left" Width="108">
+            <Rectangle.Fill>
+                <SolidColorBrush Color="Black" Opacity="0.4"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <xctk:BusyIndicator IsBusy="False"  x:Name="loadingbar" BusyContent="Attempting to login..." Margin="82,106,175,181" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" >
+            <ContentControl Margin="-10,-57,10,57"/>
+        </xctk:BusyIndicator>
+        <Button x:Name="btnProxy" Content="Proxy Settings" Margin="24,10,0,317" FontFamily="Lucida Sans" Click="BtnProxy_Click" BorderBrush="Black" Foreground="White" TextOptions.TextHintingMode="Animated" Cursor="Hand"  IsCancel="True" HorizontalAlignment="Left" Width="99">
+            <Button.Background>
+                <SolidColorBrush Color="Black" Opacity="0.4"/>
+            </Button.Background>
+            <Button.Effect>
+                <DropShadowEffect Color="#FFC8457B" ShadowDepth="10" Opacity="0.5" BlurRadius="10"/>
+            </Button.Effect>
+        </Button>
+
+        <CheckBox x:Name="cbxRemember" Content="Remember me" Margin="217,228,0,123"  ClickMode="Press" Foreground="White" Background="White" FontFamily="Lucida Sans" HorizontalAlignment="Left" Width="104" >
+            <CheckBox.BorderBrush>
+                <SolidColorBrush Color="Black" Opacity="0.4"/>
+            </CheckBox.BorderBrush>
+        </CheckBox>
+
+    </Grid>
+</Page>

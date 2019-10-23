@@ -1,0 +1,14 @@
+﻿<UserControl x:Class="Desktop.ChatVideo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Desktop"
+             mc:Ignorable="d" Height="310.833" Width="319.668">
+    <Grid Name="grid" Background="#FFE4DFDF" Height="311" VerticalAlignment="Top" MouseLeftButtonDown="Grid_MouseLeftButtonDown">
+        <Label x:Name="lblDisplayName" Content="Display Name" Margin="0,-4,0,169" FontSize="14" FontWeight="Bold"/>
+        <MediaElement x:Name="mediaElement" MouseLeftButtonDown="MediaElement1_MouseLeftButtonDown" Focusable="True" Stretch="Uniform" OpacityMask="Black" MinWidth="300" MinHeight="257" ScrollViewer.VerticalScrollBarVisibility="Disabled" Height="237" MaxHeight="237" MaxWidth="300" Margin="0,27" MediaEnded="MediaElement_MediaEnded"/>
+        <Label x:Name="lblDateTime" Content="Date Time" Margin="60,284,10,0" FontSize="10" FlowDirection="RightToLeft"/>
+        <Image x:Name="image" Margin="10,27" OpacityMask="Black"/>
+    </Grid>
+</UserControl>

@@ -1,0 +1,14 @@
+﻿<Page x:Class="Desktop.ContactList"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Desktop"
+      mc:Ignorable="d" 
+      d:DesignHeight="400" d:DesignWidth="600"
+     Title="ContactList">
+
+    <Grid>
+        <ListBox x:Name="ListBox1" HorizontalAlignment="Left" Background="#FFE8A444" Margin="0,0,0,0" VerticalAlignment="Top" Height="400" Width="600" ScrollViewer.HorizontalScrollBarVisibility="Hidden" ScrollViewer.VerticalScrollBarVisibility="Hidden" MouseDoubleClick="OpenDM" SelectionChanged="ListBox1_SelectionChanged"/>
+    </Grid>
+</Page>

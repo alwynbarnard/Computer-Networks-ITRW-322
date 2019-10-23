@@ -1,0 +1,51 @@
+﻿<Window x:Class="Desktop.AddGroupWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Desktop"
+        mc:Ignorable="d"
+        Title="AddGroupWindow" Height="297.508" Width="522.259">
+    <Grid Margin="10,0,0,139">
+        <Grid Margin="-15,0,0,-142" Background="#FF764601">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="25*"/>
+                <RowDefinition Height="184*"/>
+                <RowDefinition Height="38*"/>
+                <RowDefinition Height="24*"/>
+                <RowDefinition Height="10*"/>
+            </Grid.RowDefinitions>
+            <Label x:Name="lblLogin" Content="Add New Group&#xD;&#xA;" Margin="125,23,0,0" VerticalAlignment="Top" Height="49" Width="264" FontFamily="Lucida Sans" FontSize="30" FontWeight="Bold" HorizontalAlignment="Left" Background="{x:Null}" Foreground="White" Grid.RowSpan="2"/>
+            <Button x:Name="btnCreate" Content="CREATE GROUP" HorizontalAlignment="Left" Margin="125,129,0,0" VerticalAlignment="Top" Width="172" Height="47" FontFamily="Lucida Sans" BorderBrush="#FF0040FF" Foreground="White" Click="BtnCreate_Click" TabIndex="4" IsDefault="True" Grid.Row="1">
+                <Button.Background>
+                    <SolidColorBrush Color="Black" Opacity="0.6"/>
+                </Button.Background>
+            </Button>
+            <Label x:Name="lblGroupName" Content="Group Name" HorizontalAlignment="Left" Margin="125,50,0,0" VerticalAlignment="Top" FontFamily="Lucida Sans" Foreground="White" Grid.Row="1">
+                <Label.Background>
+                    <SolidColorBrush Color="Black" Opacity="0.4"/>
+                </Label.Background>
+            </Label>
+
+            <TextBox x:Name="txtDisplayName" HorizontalAlignment="Left" Height="23" Margin="125,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="172" FontFamily="Lucida Sans" SelectionBrush="#FF008CFB" Background="Black" BorderBrush="#FF0040FF" Foreground="#FFC37C16" Grid.Row="1"/>
+            <Image x:Name ="GroupPic" HorizontalAlignment="Left" Height="93" Margin="413,37.674,0,0" VerticalAlignment="Top" Width="124" Loaded="GroupPic_Loaded" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleX="-1.202"/>
+                        <RotateTransform/>
+                        <TranslateTransform X="-1.479"/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Button x:Name="btnUpload" Content="Choose group picture                 " HorizontalAlignment="Left" Margin="329,149,0,0" VerticalAlignment="Top" Width="134" Height="27" FontFamily="Lucida Sans" BorderBrush="#FF0040FF" Foreground="White" TabIndex="4" IsDefault="True" Click="BtnUpload_Click" Grid.Row="1">
+                <Button.Background>
+                    <SolidColorBrush Color="Black" Opacity="0.6"/>
+                </Button.Background>
+            </Button>
+
+
+        </Grid>
+
+    </Grid>
+</Window>
