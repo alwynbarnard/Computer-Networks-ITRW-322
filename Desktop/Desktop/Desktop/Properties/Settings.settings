@@ -1,0 +1,33 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Desktop.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SignedInID" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="FirebaseAppUri" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://itrw322final-464ab.firebaseio.com/</Value>
+    </Setting>
+    <Setting Name="AuthFirebaseKey" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">AIzaSyDBR4cxxXePZB2Y-wsf8yFWv7fsKVh7pLY</Value>
+    </Setting>
+    <Setting Name="FirebaseStorage" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">itrw322final-464ab.appspot.com</Value>
+    </Setting>
+    <Setting Name="NormalFireKey" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">LASzC2b1RT24P8qgHX1flqqYMlG7IYpKNbrUXn5c</Value>
+    </Setting>
+    <Setting Name="RememberMe" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Password" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Email" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="DisplayName" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+  </Settings>
+</SettingsFile>
